@@ -31,6 +31,7 @@ Route::get('/dashboard', function () {
 /***********CLIENTES****************/
 
 Route::get('cliente/inicio', 'ClienteController@index');
+Route::get('cliente/inicio/agregar', 'ClienteController@create');
 
 
 /***********EMPLEADO****************/
