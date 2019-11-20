@@ -3,7 +3,7 @@
 @section('content')
 <div class="album py-5 bg-light">
     <div class="container">
-            <h1 class="h2"> Registra tu Eventos</h1>
+            <h1 class="h2"> Registra tu Evento</h1>
             <form>
                     <div class="row">
 
@@ -17,6 +17,7 @@
                       </div>
                     </div>
                   </form>
+                  <form action=""></form>
                   <br>
         <form>
 
