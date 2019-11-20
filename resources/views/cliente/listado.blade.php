@@ -7,18 +7,21 @@
             <h1 class="h2"> Reserva tu evento</h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
                   <div class="btn-group mr-2">
-                    <a href=""><button type="button" class="btn btn-sm btn-outline-secondary"> Crear Evento</button></a>
+                    <a href="{{ url('cliente/inicio/agregar') }}"><button type="button" class="btn btn-sm btn-outline-secondary"> Crear Evento</button></a>
                 </div>
             </div>
         </div>
     <br>
+    {{-- TABLA DE EVENTOS POR CONFIRMAR --}}
+    <h1 class="h2">Eventos por confirmar</h1>
     <table class="table">
             <thead class="thead-dark">
               <tr>
                 <th scope="col">id</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Apellido</th>
-                <th scope="col">Carrera</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Hora</th>
+                <th scope="col">Tipo de Evento</th>
+                <th scope="col">Paquete</th>
                 <th scope="col">Opción</th>
               </tr>
             </thead>
@@ -29,14 +32,15 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><button  type="button"  class="btn btn-primary glyphicon glyphicon-ok" ><a href=""></a>sss</button>
-                    <button type="button" class="btn btn-danger glyphicon glyphicon-trash"></button></td>
+                <td></td>
+                <td>
+                    <button type="button" class="btn btn-danger glyphicon glyphicon-trash">Eliminar</button>
+                </td>
               </tr>
             </tbody>
       </table>
+      {{-- TABLA DE EVENTOS POR CONFIRMAR --}}
 
     {{-- end-row --}}
 </div>
-
-
 @endsection
