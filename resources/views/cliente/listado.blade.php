@@ -9,29 +9,31 @@
                   <div class="btn-group mr-2">
                     <a href=""><button type="button" class="btn btn-sm btn-outline-secondary"> Crear Evento</button></a>
                 </div>
+            </div>
         </div>
-        {{-- end-Container --}}
-    </div>
     <br>
     <table class="table">
-            <h1 class="jumbotron-heading">Mis Eventos</h1>
-            <thead>
+            <thead class="thead-dark">
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Acciones</th>
+                <th scope="col">id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Carrera</th>
+                <th scope="col">Opción</th>
               </tr>
             </thead>
             <tbody>
+
               <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button  type="button"  class="btn btn-primary glyphicon glyphicon-ok" ><a href=""></a>sss</button>
+                    <button type="button" class="btn btn-danger glyphicon glyphicon-trash"></button></td>
               </tr>
             </tbody>
-          </table>
+      </table>
 
     {{-- end-row --}}
 </div>
