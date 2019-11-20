@@ -37,12 +37,16 @@
                       <option>Paquete 3</option>
                     </select>
             </div>
+            <div class="form-group">
+                    <label for="descripcion">Descripción del Paquete</label>
+                    <input type="text" class="form-control" id="descripcion" placeholder="Descripción de acuerdo al tipo de paquete.">
+            </div>
         </form>
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2"> </h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
                       <div class="btn-group mr-2">
-                        <a href="{{ url('cliente/inicio') }}"><button type="button" class="btn btn-sm btn-outline-secondary"> Registrar Evento</button></a>
+                        <a href="{{ url('cliente/inicio') }}"><button type="button" class="btn btn-outline-primary"> Registrar Evento</button></a>
                     </div>
                 </div>
         </div>

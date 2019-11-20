@@ -6,23 +6,21 @@
 
 <div class="row">
     <div class="container">
+        {{-- Nav-Bar-MenúDashboars --}}
+        <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" href="{{ url('cliente/inicio') }}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Mis Eventos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="{{ url('/paquetes') }}" tabindex="-1" aria-disabled="true">Paquetes</a>
+                </li>
+              </ul>
+        {{-- END-NavBar --}}
 
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="{{ url('cliente/inicio') }}" role="tab" aria-controls="home" aria-selected="true">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Mis Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"></a>
-                    </li>
-                  </ul>
-                  <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-                  </div>
+
 
 
 
@@ -30,7 +28,7 @@
             <h1 class="h2"> Reserva tu evento</h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
                   <div class="btn-group mr-2">
-                    <a href="{{ url('cliente/inicio/agregar') }}"><button type="button" class="btn btn-sm btn-outline-secondary"> Crear Evento</button></a>
+                    <a href="{{ url('cliente/inicio/agregar') }}"><button type="button" class="btn btn-outline-success glyphicon glyphicon-file"> Crear Evento</button></a>
                 </div>
             </div>
         </div>
@@ -40,11 +38,11 @@
     <table class="table">
             <thead class="thead-dark">
               <tr>
-                <th scope="col">id</th>
                 <th scope="col">Fecha</th>
                 <th scope="col">Hora</th>
                 <th scope="col">Tipo de Evento</th>
                 <th scope="col">Paquete</th>
+                <th scope="col">Estatus</th>
                 <th scope="col">Opción</th>
               </tr>
             </thead>
@@ -52,11 +50,12 @@
 
               <tr>
                 <th scope="row"></th>
+                <td><a href="">Evento1</a></td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>Confirmado</td>
                 <td>
+                    <a href="{{ url('cliente/inicio/agregar') }}"><button type="button" class="btn btn-success">Actualizar</button></a>
                     <button type="button" class="btn btn-danger glyphicon glyphicon-trash">Eliminar</button>
                 </td>
               </tr>
@@ -64,6 +63,43 @@
       </table>
       {{-- TABLA DE EVENTOS POR CONFIRMAR --}}
 
+      {{-- TABLA DE EVENTOS CONFIRMADOS --}}
+
+      <br>
+      <br>
+    <h1 class="h2">Eventos confirmados</h1>
+    <table class="table table-hover">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Hora</th>
+                <th scope="col">Tipo de Evento</th>
+                <th scope="col">Paquete</th>
+                <th scope="col">Estatus</th>
+                <th scope="col">Opción</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th scope="row"></th>
+                <td><a href="">Evento1</a></td>
+                <td></td>
+                <td></td>
+                <td>Confirmado</td>
+                <td>
+                    <button type="button" class="btn btn-danger glyphicon glyphicon-trash">Eliminar</button>
+                    <button type="button" class="btn btn-danger glyphicon glyphicon-trash">Eliminar</button>
+                    <button type="button" class="btn btn-danger glyphicon glyphicon-trash">Eliminar</button>
+                </td>
+              </tr>
+            </tbody>
+      </table>
+      {{-- TABLA DE EVENTOS CONFIRMADOS --}}
+
     {{-- end-row --}}
 </div>
+
+
 @endsection
+
