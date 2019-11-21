@@ -14,9 +14,6 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Mis Eventos</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="{{ url('/paquetes') }}" tabindex="-1" aria-disabled="true">Paquetes</a>
-                </li>
               </ul>
         {{-- END-NavBar --}}
 
@@ -71,26 +68,25 @@
     <table class="table table-hover">
             <thead class="thead-light">
               <tr>
-                <th scope="col"></th>
+                <th scope="col">Evento</th>
                 <th scope="col">Hora</th>
                 <th scope="col">Tipo de Evento</th>
                 <th scope="col">Paquete</th>
-                <th scope="col">Estatus</th>
+                <th scope="col">Precio</th>
                 <th scope="col">Opción</th>
               </tr>
             </thead>
             <tbody>
 
               <tr>
-                <th scope="row"></th>
-                <td><a href="">Evento1</a></td>
+                <th><a href="">Evento1</a></th>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td>Confirmado</td>
                 <td>
-                    <button type="button" class="btn btn-danger glyphicon glyphicon-trash">Eliminar</button>
-                    <button type="button" class="btn btn-danger glyphicon glyphicon-trash">Eliminar</button>
-                    <button type="button" class="btn btn-danger glyphicon glyphicon-trash">Eliminar</button>
+                    <button type="button" class="btn btn-warning">Editar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
                 </td>
               </tr>
             </tbody>
