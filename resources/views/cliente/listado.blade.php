@@ -12,7 +12,7 @@
                   <a class="nav-link active" href="{{ url('cliente/inicio') }}">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Mis Eventos</a>
+                  <a class="nav-link disabled" href="{{ url('/paquetes') }}" tabindex="-1" aria-disabled="true">Paquetes</a>
                 </li>
               </ul>
         {{-- END-NavBar --}}
@@ -47,7 +47,7 @@
 
               <tr>
                 <th scope="row"></th>
-                <td><a href="">Evento1</a></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td>Confirmado</td>
@@ -62,7 +62,7 @@
 
       {{-- TABLA DE EVENTOS CONFIRMADOS --}}
 
-      <br>
+      <br><br>
       <br>
     <h1 class="h2">Eventos confirmados</h1>
     <table class="table table-hover">
@@ -79,13 +79,13 @@
             <tbody>
 
               <tr>
-                <th><a href="">Evento1</a></th>
+                <th>Evento1</th>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td>Confirmado</td>
                 <td>
-                    <button type="button" class="btn btn-warning">Editar</button>
+                   <a href="{{ url('cliente/evento/ver') }}"><button type="button" class="btn btn-warning">Ver</button></a>
                     <button type="button" class="btn btn-danger">Eliminar</button>
                 </td>
               </tr>

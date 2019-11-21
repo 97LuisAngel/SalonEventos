@@ -16,6 +16,18 @@ class ClienteController extends Controller
         return view('cliente\agregar');
     }
 
+    public function visualizar(){
+        return view('cliente\mostrar');
+
+    }
+
+    public function update(){
+
+    }
+    public function delete(){
+
+    }
+
 
 
 
