@@ -33,6 +33,7 @@ Route::get('/dashboard', function () {
 Route::get('cliente/inicio', 'ClienteController@index');
 Route::get('cliente/inicio/agregar', 'ClienteController@create');
 Route::get('/paquetes', 'PaquetesController@index');
+Route::get('cliente/evento/ver', 'ClienteController@visualizar');
 
 
 /***********EMPLEADO****************/
