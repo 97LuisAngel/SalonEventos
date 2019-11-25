@@ -46,3 +46,14 @@ Route::get('cliente/evento/ver', 'ClienteController@visualizar');
 
 
 /***********GERENTE****************/
+Route::get('gerente/inicio', 'gerente\GerenteController@index');
+
+
+
+/***********GERENTE****************/
+
+
+
+
+
+

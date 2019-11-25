@@ -22,7 +22,13 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
+        Schema::create('eventos',function (Blueprint $table){
+            $table->integer('quien_contrato')->unsigned()->nullable();
+        });
     }
+
+
 
     /**
      * Reverse the migrations.

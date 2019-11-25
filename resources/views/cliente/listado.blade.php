@@ -44,18 +44,19 @@
               </tr>
             </thead>
             <tbody>
-
+            @foreach ($cliente as $clientes)
               <tr>
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-                <td></td>
+                <th scope="row">{{ $clientes->fecha }}</th>
+                <td>{{ $clientes->hora  }}</td>
+                <td>{{ $clientes->tipo }}</td>
+                <td>{{ $clientes->paquete_id }}</td>
                 <td>Confirmado</td>
                 <td>
-                    <a href="{{ url('cliente/inicio/agregar') }}"><button type="button" class="btn btn-success">Actualizar</button></a>
+                    <a href=""><button type="button" class="btn btn-success">Actualizar</button></a>
                     <button type="button" class="btn btn-danger glyphicon glyphicon-trash">Eliminar</button>
                 </td>
               </tr>
+             @endforeach
             </tbody>
       </table>
       {{-- TABLA DE EVENTOS POR CONFIRMAR --}}
