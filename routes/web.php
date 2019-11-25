@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -45,8 +47,24 @@ Route::get('cliente/evento/ver', 'ClienteController@visualizar');
 /*Route::get('empleado/inicio', 'EmpleadoController@index');*/
 
 
-/***********GERENTE****************/
+/**********************************************GERENTE*****************************************************/
+/*Inicio | Luis Ángel Reyes */
 Route::get('gerente/inicio', 'gerente\GerenteController@index');
+
+/*Eventos | Luis Ángel Reyes */
+
+
+/*Paquetes | Luis Ángel Reyes*/
+Route::get('gerente/paquetes', 'gerente\PaquetesController@index');
+Route::get('gerente/paquetes/agregar', 'gerente\PaquetesController@create');
+Route::post('gerente/paquetes', 'gerente\PaquetesController@store');
+Route::get('gerente/paquete/{paquete}/editar', 'gerente\PaquetesController@edit');
+Route::patch('gerente/paquete/{paquete}', 'gerente\PaquetesController@update');
+
+/*Usuarios | Luis Ángel Reyes */
+
+
+
 
 
 
